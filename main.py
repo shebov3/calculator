@@ -1,9 +1,9 @@
-# Shehab Tarek 320220099    
+# Shehab Tarek 320220099 group 2 section 5
 import re
 print("you can use + - / * % operators only for now\n")
 text = input("Write your mathematicial equation:")
 
-text.replace(" ", "")# removing all spaces from the equation
+text = text.replace(" ", "")# removing all spaces from the equation
 
 def function():
     global text
@@ -15,7 +15,6 @@ def function():
             operator = search2.group(0)
             # removing the first few digits and first operator from the text
             text = text[search2.span(0)[1]:]
-            print(text)
 
             if operator == "+":
                 return num + function()

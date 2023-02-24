@@ -16,7 +16,7 @@ def function():
             # removing the first few digits and first operator from the text
             text = text[search2.span(0)[1]:]
 
-            if operator == "+":
+            if operator == '+':
                 return num + function()
             elif operator == '-':
                 return num - function()

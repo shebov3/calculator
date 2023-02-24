@@ -1,6 +1,6 @@
 # Shehab Tarek 320220099
+import re
 
-print("Write any mathematicial formula")
-text = input()
+text = input("Write your mathematicial equation:")
 
-print("hello world")
+print(re.search("\d+",text).group(0))

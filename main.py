@@ -6,6 +6,6 @@ text = input("Write your mathematicial equation:")
 search = re.search("\d+",text)
 digit_from_text = search.group(0)
 
-# removing the first digits from the thing
+# removing the first digits from the text
 text = text[search.span(0)[1]:]
 print(text)
